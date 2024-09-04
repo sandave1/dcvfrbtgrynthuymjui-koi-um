@@ -4,14 +4,7 @@ from faker import Faker
 import random
 faker = Faker()
 fake = Faker()
-try:
-    from getuseragent import UserAgent
-except ModuleNotFoundError:
-
-    os.system('pip install getuseragent')
-    from getuseragent import UserAgent
     
-user_agent = UserAgent('windows').Random()
 
 def Check(P):
     fer = faker.first_name()
